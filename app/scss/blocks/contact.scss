@@ -1,0 +1,120 @@
+/*  
+==========================================================================
+    7. CONTACT
+==========================================================================  
+*/
+.contact {
+
+    &__items {
+        @include flexbox();
+        justify-content: space-between;
+        width: 100%;
+        @media screen and (max-width: $md2 + 'px') {
+            flex-wrap: wrap;
+            padding-top: 50px;
+        }
+    }
+
+    &__info {
+        flex: 0 0 50%;
+        padding-right: 10px;
+        @media screen and (max-width: $md2 + 'px') {
+            flex: 1 1 100%;
+            order: 2;
+            padding-right: 0;
+        }
+    }
+
+    &__info-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: $colortext;
+        margin-bottom: 10px;
+    }
+
+    &__info-subtitle {
+        line-height: 21px;
+        color: $colortext;
+        margin-bottom: 22px;
+        @media screen and (max-width: $md4 + 'px') {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__info-item {
+        @include flexbox();
+        margin-bottom: 12px;
+        align-items: center;
+        @media screen and (max-width: $md4 + 'px') {
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__info-icon {
+        min-width: 40px;
+        min-height: 40px;
+        background-color: $dark_gray_color;
+        border-radius: 5px;
+        @include flexbox();
+        align-items: center;
+        justify-content: center;
+        margin: 5px 10px 0px 0px;
+        ion-icon{
+            font-size: 26px;
+            color: $white_color;
+        }
+
+    }
+
+    &__info-item-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: $colortext;
+    }
+
+    &__info-item-text {
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $colortext;
+    }
+
+    &__follow {
+        padding-top: 23px;
+    }
+
+    &__social {
+        @include flexbox();
+        padding: 10px 0;
+    }
+
+    &__form {
+        flex: 0 0 50%;
+        @media screen and (max-width: $md2 + 'px') {
+            flex: 1 1 100%;
+            order: 1;
+            text-align: center;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__input {
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &__input-mess {
+        textarea{
+            resize: vertical;
+        }
+    }
+}
+

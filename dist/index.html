@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Victor - Personal Portfolio HTML5 Template</title>
+
+    <!-- Useful Meta Tags -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <!-- Favicons for all Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    
+    <!-- Meta Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Vendors CSS -->
+      <!-- Swipe Slider -->
+      <link rel="preload" href="css/vendors/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"/>
+      <!-- AOS -->
+      <link rel="preload" href="css/vendors/aos.min.css" as="style" onload="this.rel='stylesheet'"/>
+      <!-- Animated Headline -->
+      <link rel="stylesheet" href="css/vendors/animated_headline.min.css" />
+      <!-- Lity -->
+      <link rel="stylesheet" href="css/vendors/lity.min.css" />
+
+    <!-- Custom CSS -->
+      <link rel="preload" href="css/structure.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="css/global.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="stylesheet" href="css/custom.css">
+  
+</head>
+<body class="landing-page" dir="ltr">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- Wrapper -->
+    <div class="wrapper">
+    
+<!-- HEADER -->
+    <header class="header header-background header-overlay section" id="home">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__navigation">
+                    <span class="header--fixed-bg"></span>
+                    <div class="container header__navigation-flex">
+<!-- Logo ====================================================================================== -->
+                        <div class="header__logo logo">
+                            <a class="logo__link" href="index.html" title="Victor - HTML5 Theme">
+                                <!-- Comment or delete if you do not need a logo-image -->
+                                <img src="images/logo_55X55.svg" alt="">
+                                
+                                <!-- Add text if you need logo-text -->
+                                <p class="logo__text"></p>
+                            </a>
+                        </div>
+<!-- Menu List ================================================================================= -->                        
+                        <nav class="header__menu menu" id="menu">
+                            <!-- Animated dot in header menu -->
+                            <div class="dot"></div>
+                            <ul class="menu__list">
+                                <li class="menu__item active"><a class="menu__link" href="#home">Home</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#service">Services</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#client">Client</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#blog">Blog</a></li>
+                                <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <!-- Responsive menu (Burger Menu) -->
+                        <div class="header__responsive-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__content">
+<!-- Header content ============================================================================ -->
+                    <!-- Main title in header -->
+                    <h1 class="header__title">I am Victor</h1>
+                    <div>
+                        <!-- Animated headline -->
+                        <h2 class="cd-headline clip is-full-width header__subtitle">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">Web Developer</b>
+                                <b>Designer</b>
+                                <b>Photographer</b>
+                            </span>
+                        </h2>
+                    </div>
+                    <!-- The button in the header. Links to the contact form -->
+                    <a class="header__btn btn btn--white header-getintouch" href="#contact">get in touch</a>
+                </div>
+                <!-- Mouse icon -->
+                <div class="header__scroll-down">
+                    <img class="header__scroll-down-icon" src="images/icons/mouse.svg" alt="Scroll Mouse">
+                    <div class="header__scroll-arrow">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- HEADER - END -->
+    <main class="main">
+    
+<!-- ABOUT -->
+    <section class="about padding-block section" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__content" data-aos="fade" data-aos-duration="1400" data-aos-once="true">
+                    <!-- Section subtitle and title -->
+                    <h2 class="about__subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                        <span class="about__subtitle-text">
+                            About me
+                        </span>
+                    </h2>
+                    <h3 class="about__title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        Web Developer and UX/UI Designer
+                    </h3>
+                    <div class="about__text" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                        <p>I am a Web Developer, and I'm very passionate and dedicated to my work.</p>
+                        <p>I have 9+ years of experience providing high-impact web solutions for diverse industry organizations, skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Aspiring to combine broad background with strong technical skills to excel as a Front-End Developer.</p>   
+                        <p>I have acquired the skills and knowledge necessary to make your project a success.</p>
+                    </div>
+                    <div class="about__links">
+<!-- Resume File =============================================================================== -->
+                        <a class="about__btn btn btn--black" href="resume.pdf" download>Download cv</a>
+
+<!-- Links to Social Pages ============================================================================== -->
+                        <ul class="about__social social">
+                            <li class="social__facebook social__icon">
+                                <a class="social__link" href="#" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                            </li>
+                            <li class="social__linkedin social__icon">
+                                <a class="social__link" href="#" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            </li>
+                            <li class="social__github social__icon">
+                                <a class="social__link" href="#" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                            </li>
+                            <li class="social__twitter social__icon">
+                                <a class="social__link" href="#" title="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </li>
+                            <li class="social__instagram social__icon">
+                                <a class="social__link" href="#" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+<!-- Image in the 'About me' Block ============================================================= -->
+                <div class="about__image" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                    <img src="images/about_me/565x565.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ABOUT - END -->
+        
+<!-- SKILLS -->
+    <section class="skills padding-block background-light" id="skills">
+        <div class="container">
+            <div class="skills__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="skills__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    My Skills
+                </h2>
+                <h3 class="skills__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    I have high skills in developing and programming
+                </h3>
+<!-- Skills Items ============================================================================== -->
+                <div class="skills__items padding-top" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                    
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">Web Development</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="95"></div>
+                            <div class="skill__bar-bg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">Photography</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="88"></div>
+                            <div class="skill__bar-bg"></div>    
+                        </div>
+                    </div>
+
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">UX/UI Design</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="83"></div>
+                            <div class="skill__bar-bg"></div>
+                        </div>
+                    </div>
+
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">Graphic Design</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="93"></div>
+                            <div class="skill__bar-bg"></div>    
+                        </div>
+                    </div>
+
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">Social Media Marketing</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="78"></div>
+                            <div class="skill__bar-bg"></div>    
+                        </div>
+                    </div>
+
+                    <!-- Skill item -->
+                    <div class="skills__item skill">
+                        <h4 class="skill__title">Logo Design</h4>
+                        <div class="bar">
+                            <div class="skill__progress-bar" data-progress="82"></div>
+                            <div class="skill__bar-bg"></div>    
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SKILLS - END -->
+        
+<!-- SERVICES -->
+    <section class="services padding-block section" id="service">
+        <div class="container">
+            <div class="services__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="services__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    Services
+                </h2>
+                <h3 class="services__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    Services i offer to my clients
+                </h3>
+<!-- Services Items ============================================================================ -->
+                <div class="services__items padding-top">
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <h4 class="service__title">Web Development</h4>
+                        <p class="service__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="desktop"></ion-icon>
+                        <h4 class="service__title">Responsive Web Design</h4>
+                        <p class="service__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+                    </div>
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="person"></ion-icon>
+                        <h4 class="service__title">Support</h4>
+                        <p class="service__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
+                    </div>
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="logo-rss"></ion-icon>
+                        <h4 class="service__title">SEO Marketing</h4>
+                        <p class="service__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="business"></ion-icon>
+                        <h4 class="service__title">Business Analysis</h4>
+                        <p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi rem saepe similique veritatis iure eius quos delectus recusandae harum voluptatum. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur</p>
+                    </div>
+
+                    <!-- Services item -->
+                    <div class="services__item service" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <ion-icon name="bulb"></ion-icon>
+                        <h4 class="service__title">Brand Identity</h4>
+                        <p class="service__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SERVICES - END -->
+        
+<!-- TESTIMONIALS -->
+    <section class="testimonials padding-block background-light section" id="client">
+        <div class="container">
+            <div class="testimonials__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="testimonials__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    Testimonials
+                </h2>
+                <h3 class="testimonials__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    What my clients think about me
+                </h3>
+<!-- Testimonials Slider ======================================================================= -->
+                <div class="testimonials__items swiper padding-top" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                    <div class="testimonials__wrapper swiper-wrapper">
+
+                        <!-- Slider item -->
+                        <div class="testimonials__item testimonial swiper-slide">
+                            <div class="testimonial__author">
+                                <div class="testimonial__photo ibg">
+                                    <img src="images/testimonials/180x180.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__author-name">Julia Green</h4>
+                                    <h5 class="testimonial__author-position">Customer</h5>
+                                </div>
+
+                            </div>
+                            <p class="testimonial__content">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="testimonials__item testimonial swiper-slide">
+                            <div class="testimonial__author">
+                                <div class="testimonial__photo ibg">
+                                    <img src="images/testimonials/180x180.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__author-name">Noah Smith</h4>
+                                    <h5 class="testimonial__author-position">Customer</h5>
+                                </div>
+
+                            </div>
+                            <p class="testimonial__content">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                        </div>
+                        
+                        <!-- Slider item -->
+                        <div class="testimonials__item testimonial swiper-slide">
+                            <div class="testimonial__author">
+                                <div class="testimonial__photo ibg">
+                                    <img src="images/testimonials/180x180.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__author-name">Kate Moss</h4>
+                                    <h5 class="testimonial__author-position">Manager</h5>
+                                </div>
+
+                            </div>
+                            <p class="testimonial__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, ipsa dicta! Exercitationem ea unde quia labore reiciendis ratione facere necessitatibus.</p>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="testimonials__item testimonial swiper-slide">
+                            <div class="testimonial__author">
+                                <div class="testimonial__photo ibg">
+                                    <img src="images/testimonials/180x180.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__author-name">John Walton</h4>
+                                    <h5 class="testimonial__author-position">Developer</h5>
+                                </div>
+
+                            </div>
+                            <p class="testimonial__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, ipsa dicta! Exercitationem ea unde quia labore reiciendis ratione facere necessitatibus.</p>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="testimonials__item testimonial swiper-slide">
+                            <div class="testimonial__author">
+                                <div class="testimonial__photo ibg">
+                                    <img src="images/testimonials/180x180.webp" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="testimonial__author-name">Betty Page</h4>
+                                    <h5 class="testimonial__author-position">Director</h5>
+                                </div>
+
+                            </div>
+                            <p class="testimonial__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, ipsa dicta! Exercitationem ea unde quia labore reiciendis ratione facere necessitatibus.</p>
+                        </div>
+                    </div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- TESTIMONIALS - END -->
+        
+<!-- PORTFOLIO -->
+    <section class="portfolio padding-block section" id="portfolio">
+        <div class="container">
+            <div class="portfolio__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="portfolio__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    Portfolio
+                </h2>
+                <h3 class="portfolio__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    Some of my best work
+                </h3>
+                <div class="portfolio__filter filter" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+<!-- Filter ==================================================================================== -->
+                    <div id="filter__categories" class="filter__categories padding-top">
+                        <a href="javascript:void(0);" class="active">
+                        All
+                        </a>
+                        
+                        <a href="javascript:void(0);">
+                        Webdesign
+                        </a>
+                        
+                        <a href="javascript:void(0);">
+                        Photos
+                        </a>
+                        
+                        <a href="javascript:void(0);">
+                        Brand
+                        </a>
+                        
+                        <a href="javascript:void(0);">
+                        Wordpress
+                        </a>
+                    </div>
+<!-- Portfolio Items =========================================================================== -->
+                    <section id="grid" class="grid">
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="photos">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="webdesign">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="brand">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="wordpress">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="wordpress">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Portfolio item -->
+                        <div class="portfolio__item" data-category="webdesign">
+                            <div class="portfolio__item-content">
+                                <a href="images/portfolio/1000x1000.webp" data-lity>
+                                    <div class="portfolio__img">
+                                        <img src="images/portfolio/1000x1000.webp" alt="Photos" title="Photos">
+                                        <div class="portfolio__item-text">
+                                            <h4 class="portfolio__item-title">Item Title</h4>
+                                            <h5 class="portfolio__item-category">Category</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- PORTFOLIO - END -->
+    
+<!-- BLOG -->
+    <section class="blog padding-block background-light section" id="blog">
+        <div class="container">
+            <div class="blog__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="blog__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    Blog
+                </h2>
+                <h3 class="blog__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    Check out my latest blog posts
+                </h3>
+<!-- Blog Items ================================================================================ -->
+                <div class="blog__items padding-top">
+
+                    <!-- Blog item -->
+                    <article class="blog__item" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+                        <div class="post">
+                            <div class="post__top ibg">
+                                <img src="images/blog/748x748.webp" alt="">
+                                <div class="post__date"><time datetime="2021-09-14">14 Sep 2021</time></div>
+                            </div>
+                            <div class="post__middle">
+                                <h4 class="post__title">Photography is the art.</h4>
+                                <p class="post__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, laboriosam. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                            </div>
+                            <div class="post__bottom">
+                                <a class="post__link" dir="auto" href="blog/article.html">Read more...</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog item -->
+                    <article class="blog__item" data-aos="fade-up" data-aos-duration="1400" data-aos-once="true">
+                        <div class="post">
+                            <div class="post__top ibg">
+                                <img src="images/blog/748x748.webp" alt="">
+                                <div class="post__date"><time datetime="2021-12-20">20 Dec 2020</time></div>
+                            </div>
+                            <div class="post__middle">
+                                <h4 class="post__title">Winter scenic tram rides.</h4>
+                                <p class="post__text">Winter Scenic Tram Rides for foot passengers will not be offered during the winter 2020-21 season. Scenic Tram Rides are scheduled to resume again the following 2021-22 season. The Aerial Tram is open for skiing/riding.</p>
+                            </div>
+                            <div class="post__bottom">
+                                <a class="post__link" dir="auto" href="blog/article.html">Read more...</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Blog item -->
+                    <article class="blog__item" data-aos="fade-up" data-aos-duration="1600" data-aos-once="true">
+                        <div class="post">
+                            <div class="post__top ibg">
+                                <img src="images/blog/748x748.webp" alt="">
+                                <div class="post__date"><time datetime="2020-08-06">6 Aug 2020</time></div>
+                            </div>
+                            <div class="post__middle">
+                                <h4 class="post__title">The open ocean in August.</h4>
+                                <p class="post__text">We've also seen great challenges facing our ocean, like the increasing effects of climate change, the infamous BP oil spill in 2010 and a rapidly changing Arctic ecosystem.</p>
+                            </div>
+                            <div class="post__bottom">
+                                <a class="post__link" dir="auto" href="blog/article.html">Read more...</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- BLOG - END -->
+    
+<!-- CONTACTS -->
+    <section class="contact padding-block section" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <!-- Section title and subtitle -->
+                <h2 class="contact__title title-block" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                    Contact
+                </h2>
+                <h3 class="contact__subtitle subtitle-block" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    Get in Touch
+                </h3>
+                <div class="contact__items padding-top">
+<!-- Contact Info ============================================================================== -->
+                    <div class="contact__info" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+                        <h4 class="contact__info-title">Contact Info</h4>
+                        <h5 class="contact__info-subtitle">Please fill out the form on this section to contact with me.</h5>
+                        <div class="contact__info-items">
+                            <div class="contact__info-item">
+                                <div class="contact__info-icon"><ion-icon name="location"></ion-icon></div>
+                                <div class="contact__info-content">
+                                    <h6 class="contact__info-item-title">Location</h6>
+                                    <p class="contact__info-item-text">100 Terrace Ave, Hempstead, NY 11550, USA</p>
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <div class="contact__info-icon"><ion-icon name="call"></ion-icon></div>
+                                <div class="contact__info-content">
+                                    <h6 class="contact__info-item-title">Call Me</h6>
+                                    <a class="contact__info-item-text" href="tel:+15165651234">+1 516-565-1234</a>
+                                </div>
+                            </div>
+                            <div class="contact__info-item">
+                                <div class="contact__info-icon"><ion-icon name="mail"></ion-icon></div>
+                                <div class="contact__info-content">
+                                    <h6 class="contact__info-item-title">Email Me</h6>
+                                    <a class="contact__info-item-text" href="mailto:user@example.com">user@example.com</a>
+                                </div>
+                            </div>
+                        </div>
+<!-- Links to Social Pages ===================================================================== -->
+                        <div class="contact__follow">
+                            <h4 class="contact__info-title">Follow Me</h4>
+                            <ul class="contact__social social">
+                                <li class="social__facebook social__icon">
+                                    <a class="social__link social__link--black" href="#" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                                </li>
+                                <li class="social__linkedin social__icon">
+                                    <a class="social__link social__link--black" href="#" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                </li>
+                                <li class="social__github social__icon">
+                                    <a class="social__link social__link--black" href="#" title="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                                </li>
+                                <li class="social__twitter social__icon">
+                                    <a class="social__link social__link--black" href="#" title="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+                                </li>
+                                <li class="social__instagram social__icon">
+                                    <a class="social__link social__link--black" href="#" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+<!-- Contact Form ============================================================================== -->
+                    <div class="contact__form" id="contactWrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+                        <form id="contactform">
+                            <div class="contact__input contact__input-name">
+                                <input class="input" placeholder="Name" type="text" name="name" id="name" size="40" required aria-invalid="false" />
+                            </div>
+                            <div class="contact__input contact__input-email">
+                                <input class="input" placeholder="Email" type="email" name="email" id="email" size="40" required aria-invalid="false" />
+                            </div>
+                            <div class="contact__input contact__input-subject">
+                                <input class="input" placeholder="Subject" type="text" name="subject" id="subject" size="40" aria-invalid="false" />
+                            </div>
+                            <div class="contact__input contact__input-mess">
+                                <textarea class="input" placeholder="Enter your message here" name="body" id="body" rows="10" aria-invalid="false"></textarea>
+                            </div>
+                            <div class="contact__input contact__input-btn">
+                                <input class="btn btn--black" type="button" value="Get in touch" id="submit" onClick="return check_values();">
+                            </div>
+                        </form>
+                        <div id="notification"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- CONTACTS - END -->
+    </main>
+        
+<!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__copyright">
+                    <p>Copyright © 2022. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+<!-- GoUpsters Button ========================================================================= -->
+        <div class="go-upstairs">
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+<!-- FOOTER - END -->    
+    </div>
+    
+    <!-- Vendors JS -->
+    <script src="js/vendors/jquery-3.6.0.min.js"></script>
+    <script src="js/vendors/aos.js"></script>
+    <script src="js/vendors/lity.min.js"></script>
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script src="js/vendors/muuri.min.js"></script>
+    <script src="js/vendors/ResizeSensor.js"></script>
+    <script src="js/vendors/ElementQueries.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    
+    <!-- Preloader -->
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        };
+    </script>
+</body>
+</html>

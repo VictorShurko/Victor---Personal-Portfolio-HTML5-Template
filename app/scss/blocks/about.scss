@@ -1,0 +1,144 @@
+/*  
+==========================================================================
+    1. ABOUT ME
+==========================================================================  
+*/
+.about {
+    &__inner {
+        @include flexbox();
+        justify-content: space-between;
+        @media screen and (max-width: $md2 + 'px') {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__content, &__image{
+        flex: 1 1 50%;
+    }
+    &__content {
+        padding-right: 20px;
+        @media screen and (max-width: $md1 + 'px') {
+            @include flexbox();
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: $md2 + 'px') {
+            padding-right: 0;
+        }
+    }
+
+    &__subtitle {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 36px;
+        color: $purple_color;
+        margin-bottom: 15px;
+        @media screen and (max-width: $md1 + 'px') {
+            flex: 0 0 100%;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+    }
+    &__subtitle-text{
+        position: relative;
+        padding-bottom: 10px;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $purple_color;
+        }
+    }
+
+    &__title {
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 86px;
+        color: $colortext;
+        margin-bottom: 33px;
+        @media screen and (max-width: $md1 + 'px') {
+            flex: 0 0 60%;
+            padding-right: 20px;
+            margin: auto 0;
+        }
+        @media screen and (max-width: $md2 + 'px') {
+            font-size: 50px;
+            line-height: normal;
+        }
+        @media screen and (max-width: $md3 + 'px') {
+            flex: 0 0 100%;
+            margin: 20px 0;
+            padding-right: 0px;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            font-size: 29px;
+            line-height: normal;
+        }
+    }
+
+    &__text {
+        line-height: 24px;
+        padding-top: 20px;
+        margin-bottom: 48px;
+        p{
+            margin-bottom: 24px;
+        }
+        @media screen and (max-width: $md1 + 'px') {
+            padding-top: 40px;
+        }
+        @media screen and (max-width: $md2 + 'px') {
+            padding-top: 30px;
+        }
+        @media screen and (max-width: $md3 + 'px') {
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__links {
+        @include flexbox();
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $md1 + 'px') {
+            flex: 0 0 100%;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            flex-direction: column;
+        }
+    }
+
+    &__social {
+        @include flexbox();
+        @media screen and (max-width: $md4 + 'px') {
+            padding-top: 20px;
+        }
+    }
+
+    &__image {
+        padding-left: 20px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media screen and (max-width: $md1 + 'px') {
+            flex: 0 0 40%;
+        }
+        @media screen and (max-width: $md2 + 'px') {
+            padding-left: 0px;
+            overflow: hidden;
+        }
+        @media screen and (max-width: $md3 + 'px') {
+            flex: 0 0 100%;
+        }
+    }
+}
+

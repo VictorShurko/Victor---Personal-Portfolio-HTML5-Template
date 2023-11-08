@@ -1,0 +1,157 @@
+/*  
+==========================================================================
+    2. BUTTONS
+==========================================================================  
+*/
+.btn{
+    display: inline-block;
+    max-height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    padding: 0 21px;
+    font-weight: 600;
+    font-size: 12px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 28px;
+    box-shadow: 0px 0px 0px 0px #9C79FF;
+    cursor: pointer;
+    @include anim(0.3s,0s);
+    @media screen and (max-width: $md4 + 'px') {
+        font-size: 14px;
+    }
+    &--black{
+        color: $colortext;
+        border: 1px solid #14171E;
+        &:hover{
+            border: 1px solid #9C79FF;
+            box-shadow: 5px 5px 0px 0px #9C79FF;
+            background-color: #fff;
+            color: $colortext;
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &--white{
+        &:hover{
+            background-color: #fff;
+            color: $colortext;
+            box-shadow: inset 2px 2px 3px rgba($color: $dark_gray_color, $alpha: 0.3);
+        }
+    }
+    &.fw{width: 100%;}
+}
+
+
+/*  
+==========================================================================
+    3. INPUT
+==========================================================================  
+*/
+input[type=text],input[type=email],input[type=tel],input[type="button"],textarea{-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+
+.input{
+    width: 100%;
+    display: block;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid rgba($color: $colortext, $alpha: 0.3);
+    border-radius: 5px;
+    padding: 0 13px;
+    box-shadow: 0px 0px 0px 0px rgba($color: $purple_color, $alpha: 0.5);
+    @include anim(0.3s,0s);
+    @media screen and (max-width: $md4 + 'px') {
+        font-size: 16px;
+    }
+    &::placeholder{
+        color: $colortext;
+        opacity: 0.5;
+    }
+    &:focus{
+        border: 1px solid rgba($color: $purple_color, $alpha: 0.5);
+        box-shadow: 5px 5px 0px 0px #9C79FF;
+    }
+}
+textarea.input{
+    height: 130px;
+    padding: 10px 13px;
+}
+
+
+/*  
+==========================================================================
+    4. FORM
+==========================================================================  
+*/
+.notification-success, .notification-warning, .notification-error{
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px;
+    & h6{
+        font-size: 18px;
+    }
+    @media screen and (max-width: $md2 + 'px') {
+        margin-bottom: 50px;
+    }
+    @media screen and (max-width: $md4 + 'px') {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
+
+/* Notifications Color */
+.notification--light-green, .notification--red, .notification--orange{
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba($color: $dark_gray_color, $alpha: 0.2);
+}
+.notification--light-green{
+    background-color: #daffe6;
+}
+.notification--red{
+    background-color: #ffcdcd;
+}
+.notification--orange{
+    background-color: #fff1c2;
+}
+
+.error[generated=true]{
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+    font-weight: 300;
+    font-size: 14px;
+    color: $white_color;
+    padding: 5px;
+    margin-left: 5px;
+    animation: errorShow 0.2s ease 0s 1 forwards;
+    z-index: 1;
+    @media screen and (max-width: $md4 + 'px') {
+        font-size: 16px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $purple_color;
+        border-radius: 0px 0px 5px 5px;
+        z-index: -3;
+    }
+}
+@keyframes errorShow {
+    0%{
+        opacity: 0;
+        top: -10px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+

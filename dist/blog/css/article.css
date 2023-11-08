@@ -1,0 +1,257 @@
+/*
+|-----------------------------------------------------------
+| Victor - Personal Portfolio HTML5 Template
+| Version Template: 1.0
+|-----------------------------------------------------------
+| My Site:        https://victorshurko.com/
+| Envato Profile: https://themeforest.net/user/victorshurko
+| E-mail:         victorshurko@gmail.com
+|-----------------------------------------------------------
+|
+| ARTICLE STYLES
+|
+|
+*/
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+.header {
+  -webkit-box-shadow: 3px 3px 5px rgba(20, 23, 30, 0.1);
+  box-shadow: 3px 3px 5px rgba(20, 23, 30, 0.1);
+}
+
+.article-header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 70px;
+}
+
+/* MAIN CONTENT */
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.article-content__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.article-content__image {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 400px;
+  flex: 0 1 400px;
+  -webkit-box-shadow: 3px 3px 5px rgba(20, 23, 30, 0.3);
+  box-shadow: 3px 3px 5px rgba(20, 23, 30, 0.3);
+  z-index: 5;
+}
+
+.article-content__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  text-align: left;
+  line-height: 56px;
+  color: #2A2D2E;
+  margin-bottom: 10px;
+}
+
+.article-content__text {
+  font-size: 14px;
+  line-height: 1.85em;
+  background-color: #fff;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+
+.article-content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+}
+
+.article-content__info ion-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.article-content__author,
+.article-content__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+blockquote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quote {
+  font-size: 16px;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.quotes {
+  padding-right: 20px;
+}
+
+/*  
+==========================================================================
+    8. FOOTER
+==========================================================================  
+*/
+
+.footer {
+  background-color: #14171e;
+}
+
+.footer__copyright {
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .go-upstairs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  padding-top: 9px;
+  bottom: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: -o-linear-gradient(196.01deg, #9D5AFE 0%, #5934FF 100%);
+  background: linear-gradient(253.99deg, #9D5AFE 0%, #5934FF 100%);
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: auto;
+  z-index: 89;
+}
+
+.footer .go-upstairs span {
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.footer .go-upstairs span:first-child {
+  -webkit-transform: rotate(45deg) translateX(6px);
+  -ms-transform: rotate(45deg) translateX(6px);
+  transform: rotate(45deg) translateX(6px);
+}
+
+.footer .go-upstairs span:last-child {
+  -webkit-transform: rotate(-45deg) translateX(-6px);
+  -ms-transform: rotate(-45deg) translateX(-6px);
+  transform: rotate(-45deg) translateX(-6px);
+}
+
+/* RTL */
+
+[dir=rtl] .article-content__text {
+  font-size: 20px;
+}
+
+[dir=rtl] .article-content__info {
+  padding: 20px 0;
+}
+
+[dir=rtl] .article-content__info ion-icon {
+  height: 100%;
+  font-size: 20px;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+[dir=rtl] .article-content__author,
+[dir=rtl] .article-content__date {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+[dir=rtl] .quote {
+  font-size: 20px;
+  font-style: normal;
+}
+
+[dir=rtl] .quotes {
+  padding-right: 0px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .article-content__title {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .article-content__text {
+    font-size: 16px;
+  }
+
+  .footer__copyright {
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  .footer .go-upstairs {
+    width: 40px;
+    height: 40px;
+    padding-top: 13px;
+  }
+
+  [dir=rtl] .article-content__text {
+    font-size: 25px;
+  }
+
+  [dir=rtl] .quote {
+    font-size: 25px;
+  }
+}

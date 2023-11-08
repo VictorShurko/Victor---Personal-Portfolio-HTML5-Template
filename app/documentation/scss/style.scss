@@ -1,0 +1,192 @@
+// Including Files
+@import 'include.scss';
+/*================================================================================
+    HEADER
+================================================================================*/
+.header {
+    &__inner {
+        @include flexbox();
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    &__logo {
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        color: #ffffff;
+        padding-bottom: 20px;
+        i{
+            letter-spacing: 1px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+
+    &__logo-img {
+        height: 55px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 23px;
+    }
+
+    &__version {
+        position: relative;
+        color: #ffffff;
+        font-weight: 300;
+        padding-bottom: 30px;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+        }
+    }
+    &__nav{}
+}
+
+.navigation {
+@include flexbox();
+flex-direction: column;
+position: fixed;
+left: 0;
+top: 0;
+width: 300px;
+height: 100vh !important;
+background: #02162F;
+box-shadow: 3px 0px 7px rgba($color: #02162F, $alpha: 0.5);
+z-index: 2;
+overflow: hidden;
+overflow-y: auto;
+&__list {
+    padding: 0 20px;
+}
+
+&__item {
+    margin: 10px 0;
+}
+
+&__link {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    margin: 2px 0;
+    @include anim(1s,0s);
+        &::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 0;
+        background-color: #D7083A;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow:inset 0px 30px 30px rgba($color: #02162F, $alpha: 0.7);
+        transform: perspective(700px) rotateX(90deg) translateY(0px) translateZ(0px);
+        @include anim(0.7s,0s);
+        z-index: -1;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: #D7083A;
+            width: 100%;
+            height: 100%;
+            transform: perspective(700px) rotateX(0deg) translateZ(9px) translateY(0px);
+            box-shadow: inset 0px 0px 0px rgba($color: #02162F, $alpha: 0);
+            @include anim(0.7s,0s);
+            z-index: -1;
+        }
+        &:hover{
+            color: #FFFFFF;
+            padding-left: 15px;
+            &::after{
+                transform: perspective(700px) rotateX(0deg) translateY(0px) translateZ(3px);
+                top: 0;
+                opacity: 1;
+                box-shadow:inset 0px 0px 0px rgba($color: #02162F, $alpha: 0);
+                @include anim(0.8s,0s);
+            }
+            &::before{
+                top: 50%;
+                opacity: 1;
+                box-shadow: inset 0px -30px 30px rgba($color: #02162F, $alpha: 0.7);
+                transform: perspective(700px) rotateX(-90deg) translateY(10px) translateZ(0px);
+                @include anim(0.8s,0s);
+            }
+        }
+    &.active{
+        padding-left: 15px;
+        @include anim(0.8s,0.2s);
+        &::after{
+            transform: perspective(700px) rotateX(0deg) translateY(0px) translateZ(3px);
+            top: 0;
+            opacity: 1;
+            box-shadow:inset 0px 0px 0px rgba($color: #02162F, $alpha: 0);
+            @include anim(0.8s,0s);
+        }
+        &::before{
+            top: 50%;
+            opacity: 1;
+            box-shadow: inset 0px -30px 30px rgba($color: #02162F, $alpha: 0.7);
+            transform: perspective(700px) rotateX(-90deg) translateY(10px) translateZ(0px);
+            @include anim(0.8s,0s);
+        }
+    }
+
+}
+
+}
+/*================================================================================
+    START
+================================================================================*/
+.start {
+
+    &__title {}
+
+    &__content {}
+
+    &__bold-text {
+        font-weight: 500;
+    }
+}
+/*================================================================================
+    FOOTER
+================================================================================*/
+.footer {
+    background-color: #02162F;
+
+    &__inner {
+        height: 100px;
+        @include flexbox();
+        align-items: center;
+        justify-content: center;
+        p{
+            color: #FFFFFF;
+            font-weight: 200;
+        }
+        a{
+            color: #D7083A;
+            @include anim(0.3s,0s);
+            &:hover{
+                color: #FFFFFF;
+            }
+        }
+    }
+}

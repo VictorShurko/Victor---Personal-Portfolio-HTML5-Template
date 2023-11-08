@@ -1,0 +1,322 @@
+/*  
+==========================================================================
+    0. HEADER
+==========================================================================  
+*/
+.header {
+    position: relative;
+    box-shadow: 0px 2px 5px rgba($color: #000000, $alpha: 0.5);
+    &__inner {
+        justify-content: center;
+        height: 100vh;
+        padding: 30px 0 0 0;
+        @include anim(0.1s,0s);
+    }
+
+    &__navigation {
+        position: fixed;
+        top: 0;
+        @include flexbox();
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-height: 70px;
+        padding: 20px;
+        z-index: 90;
+        .header--fixed-bg{
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white_color;
+            opacity: 0;
+            z-index: -2;
+            @include anim(0.3s,0s);
+            box-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.2);
+        }
+        @media screen and (max-width: $md4 + 'px') {
+            max-height: 60px;
+        }
+        @media screen and (max-width: $md3 +'px') and (orientation: landscape) {
+            max-height: 50px;
+        }
+    }
+
+    &__navigation-flex{
+        position: relative;
+        @include flexbox();
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-height: 90px;
+    }
+
+    &__content {
+        @include flexbox();
+        flex-direction: column;
+        align-items: center;
+        margin: auto 0;
+        z-index: 3;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 150px;
+        color: $white_color;
+        text-align: center;
+        margin-bottom: 25px;
+        @media screen and (max-width:$md2 + px){
+            font-size: 100px;
+        }
+        @media screen and (max-width:$md3 + px){
+            font-size: 80px;
+        }
+        @media screen and (max-width:$md4 + px){
+            font-size: 60px;
+        }
+    }
+
+    &__subtitle {
+        position: relative;
+        font-weight: 400;
+        font-size: 36px;
+        color: $white_color;
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+
+    &__scroll-down {
+        position: absolute;
+        bottom: 0;
+        @include flexbox();
+        flex-direction: column;
+        justify-content: flex-end;
+        height: calc(var(--vh, 1vh) * 100);
+        animation: scroll-down 2s ease-in-out 0s normal infinite;
+        padding-bottom: 10px;
+        z-index: 2;
+        @include anim(0.3s,0s);
+        @media screen and (max-height: 440px) {
+            height: 100%;
+        }
+        img{
+            max-height: 35px;
+        }
+    }
+
+    &__scroll-down-icon {
+        @media screen and (max-width:$md3 + px){
+            display: none;
+        }
+    }
+
+    &__scroll-arrow {
+        display: none;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        opacity: 0.5;
+        span:first-child{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &::after, &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                background-color: $white_color;
+                width: 50%;
+                height: 3px;
+            }
+            &::before{
+                left: 2px;
+                transform: rotate(35deg);
+            }
+            &::after{
+                right: 2px;
+                transform: rotate(-35deg);
+            }
+        }
+        span:last-child{
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            &::after, &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                background-color: $white_color;
+                width: 50%;
+                height: 3px;
+            }
+            &::before{
+                left: 2px;
+                transform: rotate(35deg);
+            }
+            &::after{
+                right: 2px;
+                transform: rotate(-35deg);
+            }
+        }
+        @media screen and (max-width:$md3 + px){
+            display: inline-block;
+        }
+    }
+}
+
+@keyframes scroll-down {
+    0%{top: 0px; opacity: 1;}
+    50%{top: 0px; opacity: 1;}
+    80%{top: -10px; opacity: 0.6;}
+    90%{top: 0px; opacity: 1;}
+    95%{top: -3px; opacity: 0.6;}
+    100%{top: 0px; opacity: 1;}
+}
+
+.header-background {
+    background-image: url('../images/header/1920x1080.webp');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-overlay{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: $colorHeaderOverlay;
+        opacity: 0.4;
+        z-index: 1;
+    }
+}
+
+.logo {
+    position: relative;
+    height: 55px;
+    &__link {}
+    &__text{
+        display: inline-block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 21px;
+        font-weight: 500;
+        color: $white_color;
+        padding: 10px;
+        @media screen and (max-width: $md4 +'px') {
+            font-size: 18px;
+        }
+        &--black{
+            color: $colortext;
+        }
+    }
+
+    img{
+        position: relative;
+        height: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        @media screen and (max-width: $md4 +'px') {
+            height: 70%;
+        }
+        @media screen and (max-width: $md3 +'px') and (orientation: landscape) {
+            height: 60%;
+        }
+    }
+}
+.menu {
+    position: relative;
+    &__list {
+        @include flexbox();
+        margin-right: -8px;
+        
+        @media screen and (max-width: $md3 + px){
+            flex-direction: column;
+            margin: auto 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+        @media screen and (max-width: $md3 + px){
+            display: flex;
+            justify-content: center;
+        }
+        &.active{
+        }
+    }
+
+    &__link {
+        display: block;
+        position: relative;
+        font-weight: 600;
+        color: $white_color;
+        text-align: center;
+        padding: 5px 8px;
+        @include anim(0.3s,0s);
+        @media screen and (max-width: $md3 + px){
+            font-size: 25px;
+            padding: 15px 10px;
+        }
+        &--black{
+            color: $colortext;
+            @media (max-width: $md3 + 'px') {
+                color:$white_color;
+            }
+        }
+    }
+
+    @media screen and (max-width: $md3 + px) {
+        @include flexbox();
+        justify-content: center;
+        position: fixed;
+        overflow: scroll;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba($color: $dark_gray_color, $alpha: 0.9);
+        padding-top: 40px;
+        opacity: 0;
+        z-index: 100;
+        @include anim(0.3s,0s);
+    }
+    &.active{
+        top: 0;
+        opacity: 1;
+    }
+}
+.dot{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    background-color: $white_color;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    @media screen and (max-width: $md3 + px){
+        display: none;
+    }
+}
+@keyframes dot {
+    0%{top: -5px;}
+    50%{top: -20px;}
+    100%{top: -5px;}
+}
+@keyframes dotOut {
+    0%{top: -5px}
+    50%{top: -15px}
+    100%{top: -5px}
+}
+

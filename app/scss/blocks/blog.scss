@@ -1,0 +1,123 @@
+/*  
+==========================================================================
+    6. BLOG
+==========================================================================  
+*/
+.blog {
+
+    &__items {
+        @include flexbox();
+        justify-content: space-between;
+        margin-left: -10px;
+        margin-right: -10px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1 1 33.333%;
+        padding: 0 10px 10px;
+        @media screen and (max-width: $md2 + 'px') {
+            flex: 1 1 50%;
+            padding: 0 10px 20px;
+        }
+        @media screen and (max-width: $md3 + 'px') {
+            flex: 1 1 100%;
+        }
+    }
+}
+.post {
+    @include flexbox();
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid rgba(42, 45, 46, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    &__top {
+        position: relative;
+        width: 100%;
+        height: 225px;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+        }
+    }
+
+    &__date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        background-color: $purple_color;
+        color: $white_color;
+        padding: 6px 9px;
+        border-radius: 0px 0px 10px 0px;
+        z-index: 5;
+    }
+
+    &__middle {
+        padding: 25px 15px;
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        line-height: 21px;
+        -webkit-line-clamp: 6;
+        line-clamp: 6;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+        @media screen and (max-width: $md4 + 'px') {
+            line-height: normal;
+        }
+    }
+
+    &__bottom {
+        padding: 20px 15px;
+    }
+
+    &__link {
+        position: relative;
+        line-height: 21px;
+        color: $colortext;
+        opacity: 0.7;
+        @include anim(0.3s,0s);
+        padding: 5px;
+        z-index: 0;
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $purple_color;
+            opacity: 0;
+            @include anim(0.2s,0s);
+            z-index: -1;
+        }
+        &:hover{
+            opacity: 1;
+            color: $colortext;
+            &::after{
+                width: 100%;
+                height: 2px;
+                border-radius: 10px;
+                opacity: 1;
+            }
+        }
+    }
+}
+

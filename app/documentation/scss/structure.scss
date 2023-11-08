@@ -1,0 +1,48 @@
+/*
+|-----------------------------------------------------------
+| Victor - Personal Portfolio HTML5 Template
+| Version Template: 1.0
+|-----------------------------------------------------------
+| My Site:        https://victorshurko.com/
+| Envato Profile: https://themeforest.net/user/victorshurko
+| E-mail:         victorshurko@gmail.com
+|-----------------------------------------------------------
+| === DOCUMENTATION ===
+|
+| STRUCTURE
+|
+*/
+
+// Including Files
+@import 'include.scss';
+/*  
+==========================================================================
+    STRUCTURE STYLES
+==========================================================================  
+*/
+html,body{
+    height: 100%;
+  }
+  
+/* Main Wrapper */
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    &.loaded{}
+}
+
+/* Slider */
+.swiper {
+    width: 100%;
+}
+
+/* Grid */
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    @media (max-width:$md1+px){max-width: 970px;}
+    @media (max-width:$md2+px){max-width: 750px;}
+    @media (max-width:$md3+px){max-width: none;padding: 0 10px;}
+}

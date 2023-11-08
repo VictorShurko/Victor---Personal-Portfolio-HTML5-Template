@@ -1,0 +1,48 @@
+/*
+|-----------------------------------------------------------
+| Victor - Personal Portfolio HTML5 Template
+| Version Template: 1.0
+|-----------------------------------------------------------
+| My Site:        https://victorshurko.com/
+| Envato Profile: https://themeforest.net/user/victorshurko
+| E-mail:         victorshurko@gmail.com
+|-----------------------------------------------------------
+|
+| SPECIFIC STYLES
+|
+| Table of contents
+|
+| 0. HEADER
+| 1. ABOUT ME
+| 2. SKILLS
+| 3. SERVICES
+| 4. TESTIMONIALS
+| 5. PORTFOLIO
+| 6. BLOG
+| 7. CONTACT
+| 8. FOOTER
+| 9. ERROR
+| 10. RESPONSIVE
+|
+*/
+
+// Including Files
+@import 'include.scss';
+// ------------------------------------------------
+
+@import 'blocks/header.scss';
+@import 'blocks/about.scss';
+@import 'blocks/skills.scss';
+@import 'blocks/services.scss';
+@import 'blocks/testimonials.scss';
+@import 'blocks/portfolio.scss';
+@import 'blocks/blog.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/footer.scss';
+@import 'error.scss';
+
+/*  
+==========================================================================
+    10. RESPONSIVE
+==========================================================================  
+*/

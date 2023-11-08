@@ -1,0 +1,56 @@
+/*  
+==========================================================================
+    8. FOOTER
+==========================================================================  
+*/
+.footer {
+    background-color: $dark_gray_color;
+
+    &__copyright {
+        line-height: 21px;
+        text-transform: capitalize;
+        color: $white_color;
+        padding: 40px 0;
+        text-align: center;
+        @media screen and (max-width: $md4 + 'px') {
+            line-height: normal;
+            padding: 20px 0;
+        }
+    }
+    .go-upstairs{
+        @include flexbox();
+        align-items: flex-start;
+        justify-content: center;
+        position: fixed;
+        padding-top: 9px;
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(253.99deg, #9D5AFE 0%, #5934FF 100%);
+        opacity: 0;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba($color: #000000, $alpha: 0.4);
+        @include anim(0.3s, 0s);
+        cursor: auto;
+        z-index: 89;
+        @media screen and (max-width: $md4 + 'px') {
+            width: 40px;
+            height: 40px;
+            padding-top: 13px;
+        }
+        span{
+            position: absolute;
+            width: 15px;
+            height: 4px;
+            background-color: $white_color;
+            &:first-child{
+                transform: rotate(45deg) translateX(6px);
+            }
+            &:last-child{
+                transform: rotate(-45deg) translateX(-6px);
+            }
+        }
+    }
+}
+

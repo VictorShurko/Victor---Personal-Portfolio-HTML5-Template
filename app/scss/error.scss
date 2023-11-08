@@ -1,0 +1,78 @@
+@import 'include.scss';
+/*  
+==========================================================================
+    9. ERROR
+==========================================================================  
+*/
+
+.page-not-found {
+    width: 100%;
+    height: 100vh;
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ion-icon{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 600px;
+            opacity: 0;
+            z-index: -1;
+            animation: transformIcon .3s ease 0.1s 1 forwards;
+            @media screen and (max-width: $md4 + 'px' ) {
+                font-size: 300px;
+            }
+        }
+    }
+
+    &__image {}
+
+    &__text {
+        text-align: center;
+    }
+    &__text-top {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: transformText .3s ease 0.2s 1 forwards;
+        @media screen and (max-width: $md4 + 'px' ) {
+            font-size: 25px;
+        }
+    }
+    &__text-bottom {
+        font-size: 130px;
+        font-weight: 500;
+        color: #ffffff;
+        text-shadow: 2px 2px 6px rgba($color: #000000, $alpha: 0.6);
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: transformText .3s ease 0.3s 1 forwards;
+        @media screen and (max-width: $md4 + 'px' ) {
+            font-size: 100px;
+        }
+    }
+
+    &__btn {
+        opacity: 0;
+        animation: transformText .3s ease 0.4s 1 forwards;
+    }
+}
+
+@keyframes transformText {
+    0%{transform: translateY(-50%); opacity: 0;}
+    100%{transform: translateY(0%); opacity: 1;}
+}
+@keyframes transformIcon {
+    0%{ opacity: 0;}
+    100%{ opacity: 0.1;}
+}

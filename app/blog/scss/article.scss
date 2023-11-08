@@ -1,0 +1,135 @@
+/*
+|-----------------------------------------------------------
+| Victor - Personal Portfolio HTML5 Template
+| Version Template: 1.0
+|-----------------------------------------------------------
+| My Site:        https://victorshurko.com/
+| Envato Profile: https://themeforest.net/user/victorshurko
+| E-mail:         victorshurko@gmail.com
+|-----------------------------------------------------------
+|
+| ARTICLE STYLES
+|
+|
+*/
+
+@import '../../scss/include.scss';
+.wrapper {
+    @include flexbox();
+    flex-direction: column;
+}
+/* HEADER */
+.header {
+    box-shadow: 3px 3px 5px rgba($color: #14171e, $alpha: 0.1);
+}
+.article-header {
+
+		&__inner {
+            @include flexbox();
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 70px;
+        }
+
+		&__btn {}
+}
+/* MAIN CONTENT */
+.main {
+    flex: 1 1 auto;
+}
+.article-content {
+		&__inner {
+            @include flexbox();
+            flex-direction: column;
+        }
+
+		&__image {
+            max-width: 100%;
+            flex: 0 1 400px;
+            box-shadow: 3px 3px 5px rgba($color: #14171e, $alpha: 0.3);
+            z-index: 5;
+        }
+        &__title{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            text-align: left;
+            line-height: 56px;
+            color: $colortext;
+            margin-bottom: 10px;
+            @media screen and (max-width: $md3 + 'px') {
+                font-size: 24px;
+                line-height: normal;
+            }
+        }
+		&__text {
+            font-size: 14px;
+            line-height: 1.85em;
+            background-color: #fff;
+            padding: 20px 0px;
+            margin-bottom: 50px;
+            @media screen and (max-width: $md4 + 'px') {
+                font-size: 16px;
+            }
+        }
+        &__info{
+            @include flexbox();
+            ion-icon{
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            padding: 20px 0;
+        }
+        &__author,&__date{
+            @include flexbox();
+            margin-right: 20px;
+        }
+}
+blockquote{
+    @include flexbox();
+}
+.quote{
+    font-size: 16px;
+    font-style: italic;
+    padding: 20px 0;
+}
+.quotes{
+    padding-right: 20px;
+}
+@import '../../scss/blocks/footer.scss';
+
+/* RTL */
+[dir='rtl']{
+    .article-content{
+        &__text{
+            font-size: 20px;
+            @media screen and (max-width: $md4 + 'px') {
+                font-size: 25px;
+            }
+        }
+        &__info{
+            ion-icon{
+                height: 100%;
+                font-size: 20px;
+                margin-right: 0px;
+                margin-left: 10px;
+            }
+            padding: 20px 0;
+        }
+        &__author,&__date{
+            margin-right: 0px;
+            margin-left: 20px;
+        }
+    }
+    .quote{
+        font-size: 20px;
+        font-style: normal;
+        @media screen and (max-width: $md4 + 'px') {
+            font-size: 25px;
+        }
+    }
+    .quotes{
+        padding-right: 0px;
+        padding-left: 20px;
+    }
+}

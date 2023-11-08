@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Victor - Personal Portfolio HTML5 Template</title>
+
+    <!-- Useful Meta Tags -->
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <!-- Favicons for all Devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    
+    <!-- Meta Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Vendors CSS -->
+      <!-- Swipe Slider -->
+      <link rel="preload" href="css/vendors/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'"/>
+      <!-- AOS -->
+      <link rel="preload" href="css/vendors/aos.min.css" as="style" onload="this.rel='stylesheet'"/>
+      <!-- Animated Headline -->
+      <link rel="stylesheet" href="css/vendors/animated_headline.min.css" />
+      <!-- Lity -->
+      <link rel="stylesheet" href="css/vendors/lity.min.css" />
+
+    <!-- Custom CSS -->
+      <link rel="preload" href="css/structure.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="css/global.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+      <link rel="stylesheet" href="css/custom.css">
+  
+</head>
+<body class="landing-page" dir="ltr">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- Wrapper -->
+    <div class="wrapper">
+    @@include('html/header.html')
+    <main class="main">
+    @@include('html/about.html')
+    @@include('html/skills.html')
+    @@include('html/services.html')
+    @@include('html/testimonials.html')
+    @@include('html/portfolio.html')
+    @@include('html/blog.html')
+    @@include('html/contact.html')
+    </main>
+    @@include('html/footer.html')    
+    </div>
+    
+    <!-- Vendors JS -->
+    <script src="js/vendors/jquery-3.6.0.min.js"></script>
+    <script src="js/vendors/aos.js"></script>
+    <script src="js/vendors/lity.min.js"></script>
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+    <script src="js/vendors/muuri.min.js"></script>
+    <script src="js/vendors/ResizeSensor.js"></script>
+    <script src="js/vendors/ElementQueries.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    
+    <!-- Preloader -->
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        };
+    </script>
+</body>
+</html>
