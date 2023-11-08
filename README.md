@@ -1,8 +1,8 @@
 # Victor - Personal Portfolio HTML5 Template
 
-Victor - Personal Portfolio HTML5 Template can be used for many purposes. It’s a creative, minimal and clean design.
-The template is best suited for a developer, designer, programmer, freelancer, photographer, front-end developer.
-The template contains detailed documentation with examples, with which you can quickly and easily create your own high-quality website.
+Victor - Personal Portfolio HTML5 Template can be used for many purposes. It’s a creative, minimal and clean design.  
+The template is best suited for a developer, designer, programmer, freelancer, photographer, front-end developer.  
+The template contains detailed documentation with examples, with which you can quickly and easily create your own high-quality website.  
 
 ## Features
 
@@ -53,7 +53,7 @@ The template contains detailed documentation with examples, with which you can q
     
 ### Note
 
-**Please Note:** All images are just used for Preview Purpose Only. They are not part of the template and NOT included in the final purchase files.
-All images are replaced with placeholders.
-This is an HTML5 Template and NOT a WordPress Theme.
+**Please Note:** All images are just used for Preview Purpose Only. They are not part of the template and NOT included in the final purchase files.  
+All images are replaced with placeholders.  
+This is an HTML5 Template and NOT a WordPress Theme.  
     
